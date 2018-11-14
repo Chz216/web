@@ -1,4 +1,4 @@
-<?php 
+<?php
 include_once 'php/functions.php';
 $fun = new funciones();
 ?>
@@ -8,7 +8,7 @@ $fun = new funciones();
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CDDMU</title>
+  <title>El Reventon</title>
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Styles personalize-->
@@ -31,6 +31,7 @@ $fun = new funciones();
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/valided-form.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function() {
@@ -41,6 +42,6 @@ $fun = new funciones();
       $('.seeker').slideToggle();
     })
   })
-</script> 
+</script>
 
 </html>
