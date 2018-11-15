@@ -14,7 +14,7 @@ $fun = new funciones();
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	  <link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/nav.css">
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -25,26 +25,42 @@ $fun = new funciones();
 <body>
 
 	<header class="header-main">
-		<?php $fun->menu(); ?>
+		<div class="header-content seeker">
+			<div class="search-form">
+				<form action="products.php" method="post" id="form">
+					<input type="search" name="search" placeholder="Buscar productos..." autocomplete="off" id="search">
+				</form>
+				<div class="close"><i class="fas fa-times"></i></div>
+			</div>
+		</div>
+		<div class="navbar-content">
+			<div class="logo">
+				<img src="img/logo-tipo.png" alt="" class="img-logo">
+			</div>
+			<nav class="navbar-main">
+				<ul class="nvb-nav justify-content-end">
+					<li class="nv-item"><a class="nv-link" href="index.php">Inicio</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Dama</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Caballero</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Juvenil</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Niños</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Niñas</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Infantil</a></li>
+					<li class="nv-item"><a class="nv-link" href="#">Conocenos</a></li>
+					<li class="nv-item"><a class="nv-link search-icon"><i class="fas fa-search"></i></a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<div class="container-main">
-	   <h1>No se encontro ningun resultado</h1>
+		<h1>No se encontro ningun resultado</h1>
 	</div>
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<!-- bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-  $(document).ready(function() {
-    $('.search-icon').click(function() {
-      $('.seeker').slideToggle();
-    })
-    $('.close').click(function() {
-      $('.seeker').slideToggle();
-    })
-  })
-</script>
+	<script src="js/valided-forms.js"></script>
 </body>
 </html>

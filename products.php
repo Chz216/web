@@ -84,15 +84,7 @@ $fun = new funciones();
 	<script src="js/jquery.js"></script>
 	<!-- bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-  $(document).ready(function() {
-    $('.search-icon').click(function() {
-      $('.seeker').slideToggle();
-    })
-    $('.close').click(function() {
-      $('.seeker').slideToggle();
-    })
-  })
-</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="js/valided-forms.js"></script>
 </body>
 </html>

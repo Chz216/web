@@ -6,5 +6,11 @@ $(document).ready(function() {
     }else {
       return true;
     }
-  })
+  });
+   $('.search-icon').click(function() {
+      $('.seeker').slideToggle();
+    })
+    $('.close').click(function() {
+      $('.seeker').slideToggle();
+    });
 });
